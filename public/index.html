@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IRRIGOLF, C.A. - Tecnología Hidráulica</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header id="main-header">
+        <h1 id="site-title">IRRIGOLF, C.A.</h1>
+        <h2 id="site-tagline">Especialistas en tecnología hidráulica para superficies deportivas.</h2>
+    </header>
+
+    <nav id="main-nav">
+        <div class="nav-container">
+            <ul>
+                <li><a href="#about">Sobre el Negocio</a></li>
+                <li><a href="#info-basica">Información Básica</a></li>
+                <li><a href="#features">Productos</a></li>
+                <li><a href="#contact">Contactos</a></li>
+            </ul>
+        </div>
+    </nav>
+
+        <section id="primer-contacto" class="section-card"> 
+            <h2>Primer Contacto</h2>
+            
+            <div id="greeting-box" class="interactive-container">
+                <p>Por favor, ingresa tu nombre para personalizar tu atención:</p>
+                
+                <div class="input-group">
+                    <input type="text" id="client-name" placeholder="Escribe tu nombre aquí...">
+                    <button id="greet-btn">Saludar</button>
+                </div>
+                
+                <p id="greeting-output" class="greeting-text"></p>
+                <div id="char-count-output" class="info-status"></div>
+            </div>
+        </section>
+
+    <main class="main-content">
+        <section id="about" class="section-card">
+            <h2 class="section-title">Sobre el Negocio</h2>
+            <p class="about-text">
+                IRRIGOLF, C.A. es una empresa especializada en la representación y distribución integral de sistemas de riego 
+                para superficies deportivas de alto rendimiento. Ofrecemos un portafolio completo que abarca desde automatización, 
+                dispositivos y accesorios de precisión, hasta tuberías, componentes hidráulicos y repuestos especializados para campos de golf. 
+                Nos enfocamos en garantizar la máxima eficiencia operativa y el cuidado óptimo del césped, combinando tecnología de vanguardia 
+                con el respaldo técnico que exige la infraestructura de los clubes más exigentes.
+            </p>
+
+            <div id="logo-container">
+                <img src="RB logo.jpeg" alt="Logo de Rain Bird, distribuidor de tecnología hidráulica" id="brand-logo">
+            </div>
+
+            <h3 id="info-basica" class="subsection-title">Información Básica</h3>
+            <ul class="info-list">
+                <li><strong>Categoría / Sector:</strong> Suministros Industriales, Ingeniería Hidráulica y Equipamiento para Áreas Verdes Deportivas.</li>
+                <li><strong>Modalidad de Atención:</strong> Híbrida (Atención presencial en sede/depósito, visitas técnicas directo en campo y soporte/gestión comercial online).</li>
+                <li><strong>Ubicación:</strong> Caracas, Venezuela.</li>
+                <li><strong>Público Objetivo:</strong> Superintendentes de campos de golf, gerentes de operaciones, comités de terreno de clubes deportivos, ingenieros proyectistas y profesionales de mantenimiento de áreas verdes de alto rendimiento.</li>
+            </ul>
+        </section>
+
+        <section id="evaluador-seccion"class="section-card">
+            <h2 class="section-title">Evaluador de Servicios</h2>
+            <p>Consulta la categoría del servicio según el precio fijado:</p>
+            <div class="interactive-container">
+                <div class="input-group">
+                    <input type="number" id="precio-input" placeholder="Ingresa precio en $...">
+                    <button id="btn-evaluar">Evaluar Categoría</button>
+                </div>
+                <p id="resultado-evaluacion" class="greeting-text"></p>
+            </div>
+        </section> 
+
+        <section id="generador-seccion" class="section-card">
+            <h2 class="section-title">Generador de Ficha Técnica</h2>
+            <p>Selecciona un producto del catálogo para generar su ficha técnica automatizada:</p>
+            <div class="interactive-container">
+                <div class="input-group">
+                    <select id="gen-producto">
+                        <option value="500" data-nombre="Aspersores de Riego">Aspersores de Riego</option>
+                        <option value="150" data-nombre="Swing-joints">Swing-joints</option>
+                        <option value="170" data-nombre="Tubería PVC MOM">Tubería PVC MOM</option>
+                        <option value="600" data-nombre="Válvulas Clayton">Válvulas Clayton</option>
+                        <option value="230" data-nombre="Quick Coupling">Quick Coupling</option>
+                    </select>
+                    <button id="btn-generar">Generar Ficha</button>
+                </div>
+                <div id="resultado-generador" style="margin-top: 15px;"></div>
+            </div>
+        </section>
+
+        <section id="features" class="section-card">
+            <h2 class="section-title">Productos</h2>
+            <ol class="products-list">
+                <li class="product-item">
+                    <h3>Aspersores de Riego</h3>
+                    <p><strong>Características:</strong> Construidos con carcasas de alta resistencia que protegen el mecanismo interno del desgaste por arena, tierra y vegetación. Cuentan con toberas de precisión (tecnología Rain Curtain) para distribución uniforme de agua y mecanismos de arco ajustables o de círculo completo. Incorporan filtros de malla fina para evitar obstrucciones por partículas en aguas regeneradas o de pozo.</p>
+                    <p><strong>Beneficios:</strong> Asegura un crecimiento parejo del césped. Mantenimiento simplificado desde la superficie. Distribuyen gotas más grandes resistentes a la deriva por viento, optimizando el consumo de agua y los tiempos de bombeo.</p>
+                </li>
+                <li class="product-item">
+                    <h3>Swing-joints</h3>
+                    <p><strong>Características:</strong> Conjunto de codos y niples roscados de polietileno de alta densidad que permiten movimiento en 360 grados y en múltiples planos. Diseñados con sellos herméticos que giran libremente sin perder estanqueidad ni desenroscarse. Soportan picos de presión (golpes de ariete) comunes en las redes principales de riego.</p>
+                    <p><strong>Beneficios:</strong> Absorbe el peso y los golpes pesados de la maquinaria de corte sin romper la tubería principal ni el cuerpo del aspersor. Permite subir, bajar o alinear el aspersor con precisión milimétrica para que quede a ras del terreno de juego. Alivia la tensión estructural en la toma o collarín de la red secundaria.</p>
+                </li>
+                <li class="product-item">
+                    <h3>Tubería PVC MOM</h3>
+                    <p><strong>Características:</strong> Diseñada bajo especificaciones de presión nominal para conducción de agua a presión. Coeficiente de fricción extremadamente bajo.</p>
+                    <p><strong>Beneficios:</strong> Facilita un acople sencillo en zanja, reduciendo tiempos de mano de obra y costos de instalación. Inmune a la acción de suelos agresivos, fertilizantes y productos químicos utilizados en el mantenimiento del césped. Mantiene un flujo continuo y eficiente de agua, optimizando el rendimiento de la estación de bombeo.</p>
+                </li>
+                <li class="product-item">
+                    <h3>Válvulas Clayton</h3>
+                    <p><strong>Características:</strong> Funcionan mediante la propia presión del fluido sin necesidad de fuerza mecánica externa. Construcción industrial robusta diseñada para servicio pesado en estaciones de bombeo y cabezales principales. Adaptables para regulación de presión, alivio de onda, control de nivel en tanques y apertura/cierre solenoide.</p>
+                    <p><strong>Beneficios:</strong> Modulan la apertura y el cierre de forma graduada, modulando el flujo para eliminar golpes de ariete en la tubería. Mantienen presiones de trabajo estables en el campo, independientemente de las fluctuaciones en la demanda o el bombeo. Larga vida útil y bajo mantenimiento.</p>
+                </li>
+                <li class="product-item">
+                    <h3>Juntas Dresser</h3>
+                    <p><strong>Características:</strong> Consta de un cuerpo central de acero/hierro, dos empaques anulares de elastómero y dos bridas/anillos de apriete unidos por pernos. Permite conectar tubos de extremos lisos (PVC, hierro dúctil, acero) sin necesidad de roscar ni soldar. Tolera ligeras desalineaciones angulares y movimientos axiales de la tubería.</p>
+                    <p><strong>Beneficios:</strong> Ideal para reparar roturas o fugas en tuberías principales sin esperar tiempos de curado de soldaduras o pega de PVC. Absorbe vibraciones de la red y movimientos del terreno sin perder el sello. Permite unir tuberías de diferentes materiales o diámetros exteriores con total hermeticidad.</p>
+                </li>
+                <li class="product-item">
+                    <h3>Quick Coupling</h3>
+                    <p><strong>Características:</strong> Instaladas bajo tierra a nivel del suelo dentro de una caja de válvula o directamente en el terreno. Permanecen cerradas bajo presión hasta que se introduce y gira la llave correspondiente (acople por bayoneta). Protege el interior de la entrada de tierra, césped y suciedad.</p>
+                    <p><strong>Beneficios:</strong> Puntos de agua instantáneos en campo. Al retirar la llave, el flujo se corta inmediatamente de forma automática por la presión del agua y el resorte interno. Pasan completamente desapercibidas en el paisaje, evitando interferir con el juego de golf o la maquinaria de corte.</p>
+                </li>
+            </ol>
+        </section>
+
+        <section id="contact" class="section-card">
+            <h2 class="section-title">Contactos</h2>
+            <hr class="section-divider">
+
+            <p>Para obtener más detalles sobre nuestros catálogos y productos distribuidores, puedes visitar los siguientes enlaces:</p>
+            <ul class="contact-links">
+                <li><a href="https://www.rainbird.com/es/lta" target="_blank" class="btn-link">Sitio Web Oficial Rain Bird América Latina</a></li>
+                <li><a href="https://www.instagram.com/distribuidor_rainbird/" target="_blank" class="btn-link">Instagram Oficial Distribuidor Rain Bird</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer id="main-footer">
+        <p><strong>IRRIGOLF, C.A.</strong> &copy; 2026</p>
+        <p><em id="slogan">"El motor invisible de tu campo"</em></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

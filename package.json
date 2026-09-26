@@ -1,0 +1,15 @@
+{
+    "name": "proyecto-final-web",
+    "version": "1.0.0",
+    "description": "Proyecto final de página web comercial",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js",
+        "evaluar": "node scripts/evaluador.js",
+        "generar": "node scripts/generador.js"
+    },
+    "dependencies": {
+        "express": "^4.22.3",
+        "mongoose": "^7.8.12"
+    }
+}
